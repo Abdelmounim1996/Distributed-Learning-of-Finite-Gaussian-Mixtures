@@ -76,7 +76,7 @@ class EM_pMLE:
     def M_step(self):
         an = 1/np.sqrt(self.N) 
         self.Weights =  (1./self.N)*self.conditional_expectation.sum(0)
-        self.Mean = np.dot((self.conditional_expectation.T), self.X)*self.Weights[:,np.newaxis]
+        self.Means = np.dot((self.conditional_expectation.T), self.X)*self.Weights[:,np.newaxis]
         S = np.add.reduce((self.conditional_expectation.T)[:,:,np.newaxis , np.newaxis]\
         *np.asarray(list(map(lambda matrix : [ row[:, np.newaxis]*row for row in matrix ] , self.X -self.Means[:, np.newaxis]))) , axis = 1)
         self.Covars = (1./(2*an +self.N*self.Weights))[:,np.newaxis , np.newaxis]*(2*an*self.S_x + S)
