@@ -1,0 +1,2 @@
+Gaussian_mixture_reduction.py contains the python object used for aggregation by GMR. The EM_pMLE.py is used to compute the pMLE of the finite Gaussian mixture. 
+This folder is Example of use the 2 algorithms 
