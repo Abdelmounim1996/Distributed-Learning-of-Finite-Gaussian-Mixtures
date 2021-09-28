@@ -4,13 +4,6 @@ from scipy import linalg
 from scipy.stats import multivariate_normal
 """machaine learning  library"""
 from sklearn.cluster import KMeans
-"""   Generate data library"""
-from sklearn.datasets import make_blobs
-""" data visualization  and graphical plotting library """
-import matplotlib
-import matplotlib . pyplot as plt
-from jupyterthemes import jtplot
-jtplot.style()
 # settings
 np.seterr(divide='ignore', invalid='ignore')
 class EM_pMLE:
