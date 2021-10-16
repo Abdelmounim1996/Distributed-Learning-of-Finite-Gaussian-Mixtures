@@ -70,3 +70,4 @@ class EM_pMLE:
         self.likelihood( data )
         return self.likelihood_weighted .argmax(0)
     
+    
