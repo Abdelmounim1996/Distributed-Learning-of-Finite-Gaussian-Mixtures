@@ -7,6 +7,7 @@ from numpy.linalg import multi_dot
 from sklearn.utils import check_array, check_random_state
 # library for machine learning
 from sklearn.cluster import KMeans
+np.seterr(divide='ignore', invalid='ignore')
 
 
 class EM_pMLE:
@@ -25,7 +26,7 @@ class EM_pMLE:
         self.Covars  = None 
         self.Weights = None
         self. reg_covar =  reg_covar
-        np.seterr(divide='ignore', invalid='ignore')
+        
         
         # initializations 
         if  self.init_params is  None:
