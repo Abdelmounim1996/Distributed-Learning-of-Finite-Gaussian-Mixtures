@@ -36,7 +36,7 @@ class EM_pMLE:
           self.Covars       = np.full((self.n_components , self.d , self.d),np.identity(self.d) ) 
           self.Weights      = np.full( shape=self.n_components , fill_value=1./self.n_components)
           end = time.time()
-          print("kmeans sklearn time : ", end - start)
+          #print("kmeans sklearn time : ", end - start)
         else :
           self.Means   = self.init_params[0]
           self.Covars  = self.init_params[1]
