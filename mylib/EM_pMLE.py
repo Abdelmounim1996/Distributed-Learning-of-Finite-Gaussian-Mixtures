@@ -1,5 +1,6 @@
 # library mathematic & statistic 
 import numpy as np
+import time 
 from scipy.stats import multivariate_normal
 from scipy import linalg
 from numpy.linalg import multi_dot
